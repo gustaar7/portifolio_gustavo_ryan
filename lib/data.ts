@@ -12,9 +12,9 @@ export const person = {
     { value: "18", label: "projetos" },
   ],
   email: "gustavoryanxavier930@gmail.com",
-  linkedin: "https://www.linkedin.com/in/gustavo-ryan-19a893377/",
-  github: "https://github.com/gustaar7",
-  resumeUrl: "",
+  linkedin: "www.linkedin.com/in/gustavo-ryan-19a893377/",
+  github: "github.com/gustaar7",
+  resumeUrl: "/currículo-Gustavo_Ryan_Xavier.pdf",
 };
 
 export const navLinks = [
