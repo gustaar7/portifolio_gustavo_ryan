@@ -1,0 +1,592 @@
+.hero {
+    padding: 80px 0 72px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    gap: 56px;
+    align-items: start;
+}
+
+.tag {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-3);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 24px;
+    border: 1px solid var(--border2);
+    border-radius: 4px;
+    padding: 4px 10px;
+}
+
+.tagDot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--green);
+    flex-shrink: 0;
+}
+
+.h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 1.0;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+.accent {
+    color: var(--green);
+}
+
+.dim {
+    color: #2a2a2a;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: var(--text-2);
+    line-height: 1.7;
+    max-width: 400px;
+    margin-bottom: 32px;
+    border-left: 2px solid var(--green-muted);
+    padding-left: 16px;
+}
+
+.subtitle strong {
+    color: var(--text);
+}
+
+.cta {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btnPrimary {
+    padding: 10px 22px;
+    background: var(--green);
+    color: #080808;
+    border: none;
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+    display: inline-block;
+}
+
+.btnPrimary:hover {
+    background: #16a34a;
+    transform: translateY(-1px);
+}
+
+.btnSecondary {
+    padding: 10px 22px;
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border2);
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+    display: inline-block;
+}
+
+.btnSecondary:hover {
+    border-color: var(--green-b2);
+    color: var(--green);
+}
+
+/* ── Avatar ── */
+.avatarCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding-top: 8px;
+}
+
+.avatarFrame {
+    width: 160px;
+    height: 160px;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--border2);
+    position: relative;
+    background: var(--black3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statsRow {
+    display: flex;
+    width: 160px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.stat {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    background: var(--black3);
+}
+
+.stat+.stat {
+    border-left: 1px solid var(--border);
+}
+
+.statNum {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: var(--green);
+}
+
+.statLabel {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--text-3);
+    margin-top: 2px;
+}
+
+@media (max-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .avatarCol {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-top: 0;
+    }
+
+    .h1 {
+        font-size: 38px;
+    }
+}
+
+/* Skills Component Styles */
+.skillGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skillCard {
+    padding: 20px;
+    background: var(--black2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.skillName {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.skillTrack {
+    height: 6px;
+    background: var(--black3);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.skillFill {
+    height: 100%;
+    background: var(--green);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+.skillMeta {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-3);
+}
+
+/* Projects Component Styles */
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.projectCard {
+    padding: 24px;
+    background: var(--black2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: border-color 0.2s;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.projectCard:hover {
+    border-color: var(--green-b1);
+}
+
+.projectFeatured {
+    border-color: var(--green);
+}
+
+.projectVisual {
+    position: relative;
+    height: 120px;
+    background: var(--black3);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.projectVisualGrid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        linear-gradient(var(--border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.3;
+}
+
+.projectIcon {
+    font-size: 32px;
+    z-index: 1;
+    position: relative;
+}
+
+.projectBadge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    z-index: 2;
+}
+
+.badgeLive {
+    background: var(--green);
+    color: #080808;
+}
+
+.badgeOpen {
+    background: var(--green-muted);
+    color: var(--green);
+}
+
+.badgeWip {
+    background: #fbbf24;
+    color: #92400e;
+}
+
+.projectBody {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.projectTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.projectTag {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--green);
+    padding: 4px 8px;
+    background: var(--green-muted);
+    border-radius: 6px;
+}
+
+.projectTitle {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text);
+}
+
+.projectDesc {
+    font-size: 13px;
+    color: var(--text-2);
+    line-height: 1.6;
+}
+
+.projectFooter {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    gap: 5px;
+}
+
+.botaoProjeto {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-2);
+    text-decoration: none;
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    transition: border-color 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.botaoProjeto:hover {
+    border-color: var(--green);
+    color: var(--green);
+}
+
+.projectArrow {
+    font-size: 14px;
+    color: var(--green);
+}
+
+/* Experience Component Styles */
+.experienceTimeline {
+    border-left: 1px solid var(--border);
+    padding-left: 20px;
+    margin-left: 4px;
+}
+
+.experienceItem {
+    position: relative;
+    margin-bottom: 32px;
+    padding-left: 20px;
+}
+
+.experienceDot {
+    position: absolute;
+    left: -28px;
+    top: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--black);
+    border: 1px solid var(--text-3);
+    transition: border-color 0.2s;
+}
+
+.experienceDotActive {
+    border-color: var(--green);
+    background: var(--green-muted);
+}
+
+.experienceContent {}
+
+.experienceTop {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 2px;
+    gap: 12px;
+}
+
+.experienceRole {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+}
+
+.experiencePeriod {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-3);
+    white-space: nowrap;
+}
+
+.experienceCompany {
+    font-size: 12px;
+    color: var(--green);
+    margin-bottom: 6px;
+}
+
+.experienceDesc {
+    font-size: 12px;
+    color: var(--text-3);
+    line-height: 1.6;
+}
+
+/* Contact Component Styles */
+.contactIntro {
+    font-size: 13px;
+    color: var(--text-3);
+    margin-bottom: 20px;
+}
+
+.contactGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.contactCard {
+    padding: 16px 18px;
+    background: var(--black2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s;
+}
+
+.contactCard:hover {
+    border-color: var(--green-b1);
+}
+
+.contactCard:hover .contactIcon {
+    border-color: var(--green-b1);
+    color: var(--green);
+}
+
+.contactIcon {
+    width: 34px;
+    height: 34px;
+    background: var(--black3);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+    border: 1px solid var(--border);
+    color: var(--text-2);
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.contactLabel {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--text-3);
+    margin-bottom: 2px;
+}
+
+.contactValue {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: 13px;
+    color: var(--text);
+    letter-spacing: 1px;
+}
+
+@media (max-width: 480px) {
+    .contactGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Navbar Component Styles */
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(8, 8, 8, 0.9);
+    backdrop-filter: blur(24px);
+    border-bottom: 1px solid var(--border);
+}
+
+.navInner {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 28px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLogo {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    color: var(--text);
+}
+
+.navLogoAccent {
+    color: var(--green);
+}
+
+.navLinks {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+.navLink {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-3);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.navLink:hover {
+    color: var(--green);
+}
+
+.navBadge {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border: 1px solid var(--green-b1);
+    border-radius: 20px;
+}
+
+.navPulse {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--green);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+}
