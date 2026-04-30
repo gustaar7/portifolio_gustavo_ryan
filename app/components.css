@@ -402,8 +402,6 @@
     background: var(--green-muted);
 }
 
-.experienceContent {}
-
 .experienceTop {
     display: flex;
     align-items: baseline;
@@ -437,6 +435,56 @@
     color: var(--text-3);
     line-height: 1.6;
 }
+
+/* cursos styles */
+
+.cursoTimeline {
+    border-left: 1px solid var(--border);
+    padding-left: 20px;
+    margin-left: 4px;
+}
+
+.cursoItem {
+    position: relative;
+    margin-bottom: 32px;
+    padding-left: 20px;
+}
+
+.cursoDot {
+    position: absolute;
+    left: -28px;
+    top: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--black);
+    border: 1px solid var(--text-3);
+    transition: border-color 0.2s;
+}
+
+.cursoDotActive {
+    border-color: var(--green);
+    background: var(--green-muted);
+}
+
+
+.cursoTop {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 2px;
+    gap: 4px;
+}
+
+.plataforma {
+    font-size: 12px;
+}
+.status {
+    font-size: 11px;
+    color: #16a34a;
+}
+
+
+
 
 /* Contact Component Styles */
 .contactIntro {

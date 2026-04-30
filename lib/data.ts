@@ -1,3 +1,19 @@
+export const projects = [
+  {
+    featured: true,
+    icon: "💈",
+    title: "Projeto agendamento e controle de uma barbearia",
+    description:
+      "Sistema completo para barbearia, clientes conseguem marcar um horário e o barbeiro pode gerenciar tudo.",
+    tags: ["Java", "Next.js", "TypeScript", "MySQL", "Vercel", "Railway"],
+    badge: "live" as BadgeType,
+    badgeLabel: "● Live",
+    urlProjeto: "https://barbearia-gilt-phi.vercel.app/",
+    urlGit: "https://github.com/gustaar7/barbearia.git",
+  },
+ 
+];
+
 export const person = {
   name: "Gustavo",
   nameAccent: "Ryan",  
@@ -9,7 +25,7 @@ export const person = {
     "Construindo produtos digitais com código limpo, arquitetura sólida e foco em experiências que importam.",
   stats: [
     { value: "1+", label: "ano" },
-    { value: "18", label: "projetos" },
+    { value: projects.length, label: "projetos" },
   ],
   email: "gustavoryanxavier930@gmail.com",
   linkedin: "www.linkedin.com/in/gustavo-ryan7",
@@ -21,6 +37,7 @@ export const navLinks = [
   { id: "skills", label: "skills" },
   { id: "projects", label: "projetos" },
   { id: "experience", label: "experiência" },
+  { id: "curses", label: "cursos" },
   { id: "contact", label: "contato" },
 ];
 
@@ -28,7 +45,7 @@ export const skills = [
   { name: "Java",       pct: 70, label: "Intermediário" },
   { name: "HTML / CSS",  pct: 99, label: "Avançado" },
   { name: "React / Next.js",  pct: 92, label: "Avançado" },
-  { name: "TypeScript",       pct: 88, label: "Avançado" },
+  { name: "JavaScript",       pct: 88, label: "Avançado" },
   { name: "TypeScript",       pct: 88, label: "Avançado" },
   { name: "Node.js",          pct: 82, label: "Avançado" },
   { name: "PostgreSQL",       pct: 75, label: "Intermediário" },
@@ -51,21 +68,6 @@ export interface Project {
   urlGit?: string;
 }
 
-export const projects = [
-  {
-    featured: true,
-    icon: "💈",
-    title: "Projeto agendamento e controle de uma barbearia",
-    description:
-      "Sistema completo para barbearia, clientes conseguem marcar um horário e o barbeiro pode gerenciar tudo.",
-    tags: ["Java", "Next.js", "TypeScript", "MySQL", "Vercel", "Railway"],
-    badge: "live" as BadgeType,
-    badgeLabel: "● Live",
-    urlProjeto: "https://barbearia-gilt-phi.vercel.app/",
-    urlGit: "https://github.com/gustaar7/barbearia.git",
-  },
- 
-];
 
 export const experience = [
   {
@@ -75,6 +77,40 @@ export const experience = [
     period: "2025 — presente",
     description:
       "Aplicando meus conhecimentos de programação em projetos que resolvem problemas ao meu redor.",
+  },
+
+];
+
+export const cursos = [
+  {
+    name: "Java básico",
+    plataforma: "Curso em Vídeo",
+    status: "Concluído"
+  },
+  {
+    name: "Java POO",
+    plataforma: "Curso em Vídeo",
+    status: "Concluído"
+  },
+  {
+    name: "Algoritmos e Lógica de Programação",
+    plataforma: "Curso em Vídeo",
+    status: "Concluído"
+  },
+  {
+    name: "JavaScript",
+    plataforma: "Curso em Vídeo",
+    status: "Concluído"
+  },
+  {
+    name: "MySQL",
+    plataforma: "Curso em Vídeo",
+    status: "Concluído"
+  },
+  {
+    name: "Git e GitHub",
+    plataforma: "Curso em Vídeo",
+    status: "Concluído"
   },
 
 ];

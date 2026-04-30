@@ -3,7 +3,7 @@ import "./globals.css";
 import { person } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: `${person.name} — Portfolio`,
+  title: `${person.name} R. ${person.nameFinal} — Portfolio`,
   description: person.subtitle,
 };
 

@@ -2,6 +2,7 @@
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
+import Cursos from "@/components/curses"
 import Contact from "@/components/Contact";
 import { navLinks, person } from "@/lib/data";
 
@@ -47,6 +48,9 @@ export default function Portfolio() {
         <hr className="div" />
         <Experience />
 
+        <hr className="div"/>
+        <Cursos />
+
         <hr className="div" />
         <Contact />
 
@@ -54,7 +58,7 @@ export default function Portfolio() {
       </div>
 
       <footer>
-        <em>2026</em> · feito com foco e café ☕
+        Feito por Gustavo Ryan Xavier
       </footer>
     </>
   );
