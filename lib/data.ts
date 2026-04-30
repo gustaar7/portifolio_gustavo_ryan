@@ -12,7 +12,7 @@ export const person = {
     { value: "18", label: "projetos" },
   ],
   email: "gustavoryanxavier930@gmail.com",
-  linkedin: "www.linkedin.com/in/gustavo-ryan-19a893377/",
+  linkedin: "www.linkedin.com/in/gustavo-ryan7",
   github: "github.com/gustaar7",
   resumeUrl: "/currículo-Gustavo_Ryan_Xavier.pdf",
 };
@@ -25,8 +25,10 @@ export const navLinks = [
 ];
 
 export const skills = [
+  { name: "Java",       pct: 70, label: "Intermediário" },
   { name: "HTML / CSS",  pct: 99, label: "Avançado" },
   { name: "React / Next.js",  pct: 92, label: "Avançado" },
+  { name: "TypeScript",       pct: 88, label: "Avançado" },
   { name: "TypeScript",       pct: 88, label: "Avançado" },
   { name: "Node.js",          pct: 82, label: "Avançado" },
   { name: "PostgreSQL",       pct: 75, label: "Intermediário" },
@@ -56,7 +58,7 @@ export const projects = [
     title: "Projeto agendamento e controle de uma barbearia",
     description:
       "Sistema completo para barbearia, clientes conseguem marcar um horário e o barbeiro pode gerenciar tudo.",
-    tags: ["Next.js", "TypeScript", "MySQL", "Vercel", "Railway"],
+    tags: ["Java", "Next.js", "TypeScript", "MySQL", "Vercel", "Railway"],
     badge: "live" as BadgeType,
     badgeLabel: "● Live",
     urlProjeto: "https://barbearia-gilt-phi.vercel.app/",
